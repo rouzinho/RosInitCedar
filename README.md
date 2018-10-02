@@ -1,5 +1,5 @@
 # A ROS Subscriber in Cedar
-This is a DFT plugin to integrate ROS inside Cedar.
+This is a DFT script to initialize ROS inside Cedar.
 
 Everything you want to know about DFT -> https://dynamicfieldtheory.org/
 
@@ -9,9 +9,7 @@ Everything you need to know about ROS -> http://www.ros.org/
 
 ## Getting Started
 
-The plugin is a basic ROS subscriber reading data from a topic with the type Float64.
-
-Of course you can adapat it to subscribe to any topic.
+The script is a basic ROS init() thread allowing to subscribe and publish to any topics with a DFT plugin.
 
 It basically consists of a C++ code starting a ROS init() thread, then the plugin itself is listening to the topic. 
 
@@ -41,7 +39,7 @@ Anyway, ROS and Cedar are a bit to powerful to run on the same computer (if you 
 
 First clone the repository :
 
-`git clone https://github.com/rouzinho/ROS-Subscriber-Cedar.git`
+`git clone https://github.com/rouzinho/RosInitCedar.git`
 
 In the project.conf, change the CEDAR_HOME directory to your own :
 
@@ -59,7 +57,7 @@ Finally start the compilation :
 
 `make`
 
-You should see the plugin under the name libEarListener.so in the build/ repository
+You should see the plugin under the name libInitRos.so in the build/ repository
 
 ## Run the plugin
 
@@ -67,9 +65,9 @@ Execute cedar and load it into cedar
 
 *Tools -> Manage plugins*
 
-In the plugin Manager window, click on *add* and choose the plugin libEarListener.so. This one should appear in the window.
+In the plugin Manager window, click on *add* and choose the plugin libInitRos.so. This one should appear in the window.
 
-You can close the window. The plugin is loaded inside cedar and before loading it, make sure your ROS node is running.
+You can close the window. The script is loaded inside cedar and before loading it, make sure your ROS node is running.
 
 Run the ROS init() thread 
 
@@ -80,20 +78,6 @@ Then click on play to start the Ros initialisation. This will create a thread th
 
 
 You can now go back to the cedar main interface and click on the Utilities tab.
-
-Drag the EarSubscriber widget into the architecture panel. When your architecture is ready, you can start the simulation.
-You will see that the EarSubscriber transform the input of a topic into a 1D Gaussian function.
-For this case, I read data from a noise sensor and use the value as amplitude of the gaussian function.
-
-
-## Work in progress
-
-This plugin is right now more a proof of concept than a stable module. As you have seen, you have to specify everything inside the code (topic subscription, type read...)
-
-In the future, the plugin will use the Qt widget interface to select the nodes, topics and types in order to avoid changing the code everytime you want to subscribe to a topic.
-
-The plugin will be more like an artefact binding sensors to DFT.
-
 
 
 ## Authors
