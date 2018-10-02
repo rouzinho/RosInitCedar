@@ -1,4 +1,4 @@
-# A ROS Subscriber in Cedar
+# A ROS Initializer in Cedar
 This is a DFT script to initialize ROS inside Cedar.
 
 Everything you want to know about DFT -> https://dynamicfieldtheory.org/
