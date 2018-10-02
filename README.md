@@ -18,7 +18,7 @@ The code work for the 6.x version of Cedar.
 
 ### Prerequisites
 
-You first need to install cedar by following the instructions here : https://bitbucket.org/cedar/development
+You first need to install cedar by following the instructions here : https://github.com/cedar/cedar
 
 You can't use a precompiled version of Cedar to compile and run the plugin.
 
