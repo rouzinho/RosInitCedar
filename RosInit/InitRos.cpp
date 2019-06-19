@@ -17,6 +17,8 @@ void InitRos::run()
     int argc = 0;
     char **argv = NULL;
     ros::init(argc, argv, "listener");
+    ros::Rate loop_rate(40);
+    loop_rate.sleep();
 }
 void requestStop()
 {
