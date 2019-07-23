@@ -16,9 +16,9 @@ void InitRos::run()
 {
     int argc = 0;
     char **argv = NULL;
-    ros::init(argc, argv, "listener");
-    ros::Rate loop_rate(40);
-    loop_rate.sleep();
+    ros::init(argc, argv, "cedar");
+    //ros::Rate loop_rate(80);
+    //loop_rate.sleep();
 }
 void requestStop()
 {
