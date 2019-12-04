@@ -1,6 +1,5 @@
 #include "InitRos.h"
 #include "ros/ros.h"
-#include "std_msgs/String.h"
 
 
 //#include <sstream>
@@ -17,6 +16,7 @@ void InitRos::run()
     int argc = 0;
     char **argv = NULL;
     ros::init(argc, argv, "cedar");
+    //ros::Rate loop_rate(20);
     //ros::Rate loop_rate(80);
     //loop_rate.sleep();
 }
