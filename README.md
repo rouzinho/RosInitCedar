@@ -37,7 +37,7 @@ Anyway, ROS and Cedar are a bit to powerful to run on the same computer (if you 
 
 **INSTALL YARP**
 
-This last version of the plugin requires yarp (cedar built with yarp support - you don't have to do$
+This last version of the plugin requires yarp (cedar built with yarp support - you don't have to do it if you didn't include YARP when building Cedar)
 
 https://www.yarp.it/install.html
 
