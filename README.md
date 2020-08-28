@@ -35,6 +35,14 @@ For my case, I have Cedar and a basic ROS on a computer and a complete ROS deskt
 
 Anyway, ROS and Cedar are a bit to powerful to run on the same computer (if you have a big DFT model and a complex robot), so I recommend using 2 different computer.
 
+**INSTALL YARP**
+
+This last version of the plugin requires yarp (cedar built with yarp support - you don't have to do$
+
+https://www.yarp.it/install.html
+
+If you don't need it, remove the find_package(YARP REQUIRED) in the cedarProject.cmake
+
 ### Installing
 
 First clone the repository :
